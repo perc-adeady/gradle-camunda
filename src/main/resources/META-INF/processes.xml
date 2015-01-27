@@ -3,8 +3,7 @@
 <process-application
     xmlns="http://www.camunda.org/schema/1.0/ProcessApplication"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
- 
-  <process-archive name="loan-approval">
+  <process-archive name="script-task">
     <process-engine>default</process-engine>
     <properties>
       <property name="isDeleteUponUndeploy">false</property>
