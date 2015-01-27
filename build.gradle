@@ -1,7 +1,9 @@
+apply plugin: 'groovy'
+apply plugin: 'idea'
 apply plugin: 'java'
 apply plugin: 'propdeps' //mimics maven "provided" scope
 apply plugin: 'war'
-apply plugin: "io.spring.dependency-management"  //to import bom
+apply plugin: 'io.spring.dependency-management'  //to import bom
 
 sourceCompatibility = 1.5
 version = '1.0'
@@ -30,6 +32,8 @@ dependencyManagement {
 }
 
 dependencies {
+
+    compile 'org.codehaus.groovy:groovy-all:2.3.0'
 
     providedCompile 'org.camunda.bpm:camunda-engine'
     providedCompile 'javax.servlet:javax.servlet-api:3.0.1'
